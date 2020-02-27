@@ -1,12 +1,19 @@
 <!DOCTYPE html>
-<!-- Specifies English language, making site accessible such as for screen readers -->
+<!-- html lang tag makes site accessible e.g. for screen readers -->
 <html lang="en-us">
 
 <!-- The head element contains various metadata for the Document -->
 <head>
+
+    <!-- meta tag is used for meta data that can't be expressed by other tags -->
     <meta charset="UTF-8" />
+
+    <!-- link element links this document to other resources-->
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- title element is often different from first heading and can stand alone without other context -->
     <title>Horiseon Social Solution Services, Inc.</title>
+
 </head>
 
 <!-- Body is human readable content of the document -->
@@ -14,51 +21,90 @@
     <div class="header">
 
         <!-- h1 is a main section heading -->       
-        <button class="seo" onclick="Horiseon">
-        <h1>Horiseon</h1></button></h1>
+     
+        <button class="seo" onclick="Horiseon"><h1>Horiseon</h1></button>
 
         <!-- <h1><span class="seo">Horiseon</span></h1> -->
 
         <!-- nav is a section with navigation links, to other pages or in same page -->
         <nav>
+            <!-- Unordered list. List of items whose order is not important -->
             <ul>
-                <li>
-                    <a href="#search-engine-optimization" title="go to Search Engine Optimization section on this page">Search Engine Optimization</a>
+                <!-- list items, child elements of above unordered list-->
+                <!-- href tag contains a url or a url fragment -->
+                <!-- id tag is a unique identifier in the whole document -->
+                <!-- title is advisory information about the current element, may present as a tooltip -->
+                        <li>
+                    <a href="#search-engine-optimization" 
+                       id="search-engine-optimization" 
+                       title="go to Search Engine Optimization section on this page">
+                       Search Engine Optimization
+                    </a>
                 </li>
+        
                 <li>
-                    <a href="#online-reputation-management title="go to Reputation Management section on this page">Online Reputation Management</a>
+                    <a href="#online-reputation-management" 
+                    id="online-reputation-management" 
+                    title="go to Reputation Management section on this page">
+                    Online Reputation Management
+                    </a>
+                
                 </li>
+            
                 <li>
-                    <a href="#social-media-marketing" title="go to Social Media Marketing section on this page">Social Media Marketing</a>
+                    <a href="#social-media-marketing" 
+                    id="social-media-marketing" 
+                    title="go to Social Media Marketing section on this page">
+                    Social Media Marketing
+                    </a>
+                
                 </li>
             </ul>
         </nav>
     </div>
-    <div class="hero"></div>
+    <!-- End of header -->
+    
+    <div class="hero">
+    </div>
+    
     <!-- main is tag used for accessibility (instead of div) that is directly related to the central topic of the document -->
     <main class="content">
+    
         <div class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="trendy desk surface with hand-drawn graphic of search engine optimization" class="float-left" />
+            <img src="./assets/images/search-engine-optimization.jpg" 
+            alt="trendy desk surface with hand-drawn graphic of search engine optimization" 
+            class="float-left"/>
+            
             <h2>Search Engine Optimization</h2>
             <p>
                 The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
             </p>
         </div>
-        <div id="online-reputation-management" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" alt="macbook laptop displaying a steadily improving reputation in a bar graph and pie charts" class="float-right" />
+        
+        <div class="online-reputation-management">
+        
+            <img src="./assets/images/online-reputation-management.jpg" 
+            alt="laptop displaying improving reputation with charts" 
+            class="float-right" />
+            
             <h2>Online Reputation Management</h2>
+        
             <p>
                 The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
             </p>
         </div>
-        <div id="social-media-marketing" class="social-media-marketing">
-            <img src="./assets/images/social-media-marketing.jpg" alt="like, share, tweet, and media speech bubbles and various tech related icons at business meeting" class="float-left" />
+        
+        <div class="social-media-marketing">
+            <img src="./assets/images/social-media-marketing.jpg" 
+            alt="like, share, tweet, and media icons, at a business meeting" 
+            class="float-left" />
             <h2>Social Media Marketing</h2>
             <p>
                 Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
             </p>
         </div>
     </main>
+    
     <div class="benefits">
         <div class="benefit-lead">
             <h3>Lead Generation</h3>
@@ -84,6 +130,8 @@
     </div>
     <div class="footer">
         <h2>Made with ❤️️ by Horiseon</h2>
+
+     <!-- &copy; displays copyright symbol -->
         <p>
             &copy; 2019 Horiseon Social Solution Services, Inc.
         </p>
